@@ -1,0 +1,12 @@
+1) Return httpd process
+  to return the number of httpd process we can run this command:
+
+    ps aux | grep "httpd"  | awk '{sum1 +=$3}; END {print sum1}'
+
+  the result is:
+
+   >> 10
+
+2.) Change the file extension from *.txt to *.dat we simply run this code in the terminal
+  
+  for file in mig33/inner.folder/*.txt; do mv "$file" "${file%.txt}.dat"; done
